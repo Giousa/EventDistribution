@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+/**
+ *  注意：当ImageView不执行onClick方法并且clickable=false的时候，此时onTouch仅仅执行down方法。
+    若是ImageView执行onClick或者clickable=true时，down-》move-》up，逐步执行。
+ */
 public class MainActivity extends AppCompatActivity {
 
     private final String TAG = MainActivity.class.getSimpleName();
